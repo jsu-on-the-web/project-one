@@ -1,0 +1,160 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Righteous&display=swap");
+
+/*=============================================
+=            Main selectors            =
+=============================================*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-image: url("img/background.jpg");
+	background-blend-mode: multiply;
+}
+
+header,
+main {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+header {
+	font-family: "Righteous", cursive;
+	text-align: center;
+	padding: 2vh;
+}
+main {
+	font-family: "Balsamiq Sans", cursive;
+}
+
+h2 {
+	font-family: "Righteous", cursive;
+	padding: 20px;
+}
+
+footer {
+	font-family: "Balsamiq Sans", cursive;
+	display: flex;
+	/* width: max-content; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 10vh;
+	background-color: #ffffff;
+	border: #222222 2px solid;
+}
+
+/*=========================
+=	IDs =======
+=========================*/
+#nav-bar {
+	margin-bottom: 4vh;
+	background-color: #ffffff;
+}
+
+/*----------  Gallery  ----------*/
+
+#gallery {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	/* the repeat method takes two parameters: the number of columns and the size of them */
+	justify-content: center;
+	grid-gap: 1vw;
+	padding: 1vwh;
+}
+
+#gallery img {
+	height: 200px;
+	width: 200px;
+	padding: 1vw;
+	padding-bottom: 4vw;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+	background-color: #ffffff;
+}
+
+#gallery img:hover {
+	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.9);
+}
+
+/*----------  Contact form  ----------*/
+
+#contactForm {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 1vw;
+}
+
+#contactForm > label {
+	font-weight: bold;
+}
+
+#messageSection {
+	width: 60vw;
+}
+
+#formTitle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 4vh;
+}
+
+#currentMessages {
+	padding: 3vwh;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+/*=========================
+=            Selectors            =
+=========================*/
+
+nav > ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 7vh;
+	border-bottom: 1px solid #000000;
+}
+
+nav > ul > li > a {
+	color: #222222;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+	color: crimson;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 1vw;
+}
+
+button {
+	border-radius: 5px;
+}
